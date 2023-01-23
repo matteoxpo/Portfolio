@@ -1,8 +1,67 @@
 .square {
-    background-color: rgb(233, 58, 34);
+    background-color: rgb(248, 133, 26);
     color: white;
     padding: 5px;
     font-weight: 400;
     font-size: x-large;
     border-radius: 10px;
+}
+
+.square-brand {
+    background-color: rgb(81, 83, 190);
+    color: white;
+    padding: 5px;
+    font-weight: 630;
+    border-radius: 10px;
+}
+
+.img-square {
+    background-color: rgba(124, 163, 187, 0.8);
+    color: white;
+    font: 12em;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 550px) {
+    .img-square {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .img-square {
+        max-width: 60%;
+    }
+}
+
+
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: 120%;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Bottom left text */
+.left {
+    position: absolute;
+    left: 10%;
+}
+
+
+.top {
+    position: absolute;
+    top: 15%;
+}
+
+.center {
+    position: absolute;
+    top: 30%;
 }
