@@ -12,56 +12,74 @@
     color: white;
     padding: 5px;
     font-weight: 630;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
-.img-square {
-    background-color: rgba(124, 163, 187, 0.8);
-    color: white;
-    font: 12em;
-    padding: 5px;
-    border-radius: 5px;
+@media (min-width: 1024px) {
+    p {
+        font-size: calc(16px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+    }
 }
+
+
+.bg-dark {
+    background-color: rgb(55, 60, 66);
+}
+
+.bg-grey {
+    background-color: rgb(162, 174, 190);
+
+}
+
+
+.navbar-brand {
+    margin-left: 5%;
+}
+
+.navbar-toggler {
+    margin-right: 5%;
+}
+
+.block-hello {
+    width: 100%;
+    background: url('../images/blur.png') top left;
+}
+
+
+.block-hello>div {
+    margin-left: 3%;
+    color: white;
+}
+
+
+.title-square {
+    background-color: rgba(124, 163, 187, 0.8);
+    border-radius: 5px;
+    color: white;
+}
+
+.quote-square {
+    background-color: rgba(253, 174, 174, 0.3);
+    color: white;
+    border-radius: 8px;
+}
+
+
 
 @media screen and (min-width: 550px) {
-    .img-square {
+    .title-square {
         max-width: 70%;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .img-square {
+    .title-square {
         max-width: 60%;
     }
 }
-
-
 
 .nav-link {
     color: white;
     font-weight: 500;
     font-size: 120%;
-}
-
-.img-container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-/* Bottom left text */
-.left {
-    position: absolute;
-    left: 10%;
-}
-
-
-.top {
-    position: absolute;
-    top: 15%;
-}
-
-.center {
-    position: absolute;
-    top: 30%;
 }
