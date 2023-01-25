@@ -74,7 +74,31 @@
 
 }
 
+@media screen and (min-width: 550px) {
 
+    .my-small {
+        display: none;
+    }
+
+    .my-medium-large {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .my-medium-large {
+        display: none;
+    }
+
+    .my-small {
+        width: 100%;
+        height: auto;
+    }
+
+}
 
 .block-hello>div {
     margin-left: 3%;
