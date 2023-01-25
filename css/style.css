@@ -26,7 +26,13 @@
     p {
         font-size: calc(16px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
     }
+
+    .add-high {
+        height: 400px;
+    }
 }
+
+
 
 
 .bg-dark {
@@ -35,7 +41,10 @@
 
 .bg-grey {
     background-color: rgb(162, 174, 190);
+}
 
+.bg-dark-grey {
+    background-color: rgb(106, 110, 116);
 }
 
 
@@ -54,7 +63,15 @@
 
 .block-projects-struct {
     width: 100%;
-    background: url('../images/structProg.jpg') top left;
+    background: url('../images/back2.jpg') top left;
+}
+
+@media screen and (min-width: 550px) {
+    .struct-pick {
+        margin-right: 3%;
+        background: url('../images/structProg.jpg') no-repeat top left;
+    }
+
 }
 
 
@@ -66,18 +83,9 @@
 
 
 .title-square {
-    background-color: rgba(124, 163, 187, 0.8);
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
 }
-
-.quote-square {
-    background-color: rgba(82, 238, 90, 0.8);
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
-    padding: 3px;
-}
-
 
 
 @media screen and (min-width: 550px) {
