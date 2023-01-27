@@ -30,6 +30,11 @@
 
 }
 
+.title {
+    font-weight: 600;
+
+}
+
 @media (min-width: 1024px) {
     p {
         font-size: calc(16px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
@@ -43,6 +48,12 @@
     code {
         font-size: calc(11px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
     }
+
+    .title {
+        font-size: calc(23px + 5 * ((100vw - 1024px) / (1024)));
+
+    }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -57,7 +68,12 @@
     }
 
     .sub-title {
-        font-size: calc(15px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+        font-size: calc(21px + 5 * ((100vw - 550px) / (1024 - 550)));
+    }
+
+    .title {
+        font-size: calc(22px + 5 * ((100vw - 550px) / (1024 - 550)));
+
     }
 }
 
@@ -75,7 +91,10 @@
         font-size: calc(17px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
     }
 
+    .title {
+        font-size: calc(19px + 5 * ((100vw - 550px) / (1024 - 550)));
 
+    }
 
 }
 
