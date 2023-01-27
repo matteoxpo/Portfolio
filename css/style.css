@@ -36,6 +36,10 @@
         font-weight: 495;
     }
 
+    .sub-title {
+        font-size: calc(13px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+    }
+
     code {
         font-size: calc(11px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
     }
@@ -51,6 +55,10 @@
         font-size: calc(18px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
         font-weight: 475;
     }
+
+    .sub-title {
+        font-size: calc(15px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -61,6 +69,10 @@
 
     h4 {
         font-size: calc(18px + (18 - 14) * ((100vw - 480px) / (1024 - 300)));
+    }
+
+    .sub-title {
+        font-size: calc(17px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
     }
 
 
