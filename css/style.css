@@ -8,7 +8,6 @@
     display: block;
 }
 
-
 .square {
     background-color: rgb(248, 133, 26);
     color: white;
@@ -140,6 +139,11 @@
 
 }
 
+.my-button {
+    border: 0px;
+    border-radius: 3vw;
+    max-width: 70vw;
+}
 
 @media screen and (min-width: 550px) {
     .text-icon {
