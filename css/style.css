@@ -35,13 +35,36 @@
         font-size: calc(16px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
         font-weight: 495;
     }
+
+    code {
+        font-size: calc(11px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+    }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
     p {
         font-size: calc(18px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
-        font-weight: 600;
+        font-weight: 550;
     }
+
+    .my-code {
+        font-size: calc(18px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+        font-weight: 475;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    h1 {
+        font-size: calc(22px + (18 - 14) * ((100vw - 480px) / (1024 - 300)));
+    }
+
+    h4 {
+        font-size: calc(18px + (18 - 14) * ((100vw - 480px) / (1024 - 300)));
+    }
+
+
+
 }
 
 .bg-dark {
@@ -98,6 +121,7 @@
         width: 100%;
         height: auto;
     }
+
 
 }
 

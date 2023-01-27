@@ -234,6 +234,35 @@
                         <a href="https://github.com/matteoxpo/C3_SimpleBashUtils-0" target="_blank">Git - ветка
                             develop</a>
                     </h4>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <code class="col-lg-6 col-12 my-code">
+                                typedef struct s_FilesData {
+                                <br>
+                                int filesCount;
+                                <br>
+                                
+                                char** fileNames;
+                                <br>
+                                
+                                int currentFileIndex;
+                                <br>
+                                char* currentFileName;
+                                <br>
+                                
+                                void (*del)(struct s_FilesData* self);
+                                <br>
+                                } FilesData;
+                            </code>
+                            <div class="col-lg-6 col-12">
+                                <p>
+                                    Из интересного в этой работе использовальзовались указатели на функции
+                                    <br>
+                                    внутри структуры - что-то в роде ООП
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
