@@ -226,4 +226,5 @@
 .contact-link:visited {
     text-decoration: none;
     color: #000000;
+    -webkit-appearance: none;
 }
