@@ -222,9 +222,8 @@
     color: rgb(118, 118, 118);
 }
 
-.contact-linka:link,
+.contact-link:link,
 .contact-link:visited {
     text-decoration: none;
     color: #000000;
-    -webkit-appearance: none;
 }
