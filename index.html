@@ -218,15 +218,14 @@
     </div>
     <div class="container">
         <div class="row justify-content-start">
-
             <div class="col-12 ">
-                <button class="my-button" onclick='ShowHideText()'>
+                <button class="my-button" onclick='ShowHideText("my-bash")'>
                     <h2>
                         SimpleBashUtils
                         <i class="bi bi-arrow-down-short"></i>
                     </h2>
                 </button>
-                <div class="option">
+                <div class="my-bash">
                     <h3>
                         Написать реализацию shell-утилит cat и grep
                     </h3>
@@ -279,6 +278,69 @@
                 </div>
             </div>
         </div>
+
+        <div class="row justify-content-start">
+            <div class="col-12 ">
+                <button class="my-button" onclick='ShowHideText("my-math")'>
+                    <h2>
+                        Math.h
+                        <i class="bi bi-arrow-down-short"></i>
+                    </h2>
+                </button>
+                <div class="my-math">
+                    <h3>
+                        Написать реализацию библиотеки
+                        math.h с точностью 1&#215;e6
+                    </h3>
+                    <h4>
+                        <a href="https://github.com/matteoxpo/s21_math" target="_blank">Git - ветка
+                            develop</a>
+                    </h4>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <code class="col-lg-6 col-12 my-code">
+                                /* <br> 
+                                структура для инфомарции <br>
+                                о файлах в папке <br> 
+                                и конкретном файла <br>
+                                */<br>
+                                typedef struct s_FilesData {
+                                <br>
+                                int filesCount;
+                                <br>
+                                
+                                char** fileNames;
+                                <br>
+                                
+                                int currentFileIndex;
+                                <br>
+                                char* currentFileName;
+                                <br>
+                                
+                                void (*del)(struct s_FilesData* self);
+                                <br>
+                                } FilesData;
+                            </code>
+                            <div class="col-lg-6 col-12">
+                                <div class="title">
+                                    Здесь я научился писать unit-тесты!
+                                    <br>
+                                    А также использовать gcov_report
+                                    для отслеживания степени покрытия
+                                    тестами той или иной функции
+                                    <br>
+                                </div>
+                                <div class="sub-title">
+                                    Сами функции довольной простые:<br>
+                                    Приближенные вычисления, ряды
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 

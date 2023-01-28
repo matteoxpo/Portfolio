@@ -1,3 +1,3 @@
-function ShowHideText() {
-    $(".option").toggle('show');
+function ShowHideText(from) {
+    $("." + from).toggle('show');
 }
