@@ -36,9 +36,30 @@
 
 }
 
+@media (max-width: 1024px) {
+    p {
+        font-size: calc(20px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+        font-weight: 495;
+    }
+
+    .sub-title {
+        font-size: calc(13px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+    }
+
+    code {
+        font-size: calc(20px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+    }
+
+    .title {
+        font-size: calc(21px + 5 * ((100vw - 1024px) / (1024)));
+
+    }
+
+}
+
 @media (min-width: 1024px) {
     p {
-        font-size: calc(16px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
+        font-size: calc(19px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
         font-weight: 495;
     }
 
@@ -130,32 +151,6 @@
     background: url('../images/back2.jpg') top left;
 }
 
-@media screen and (min-width: 550px) {
-
-    .my-small {
-        display: none;
-    }
-
-    .my-medium-large {
-        width: 100%;
-        height: auto;
-    }
-
-}
-
-@media screen and (max-width: 550px) {
-
-    .my-medium-large {
-        display: none;
-    }
-
-    .my-small {
-        width: 100%;
-        height: auto;
-    }
-
-
-}
 
 .block-hello>div {
     margin-left: 3%;
@@ -168,19 +163,6 @@
     color: white;
 }
 
-
-@media screen and (min-width: 550px) {
-    .title-square {
-        max-width: 70%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .title-square {
-        max-width: 60%;
-    }
-}
-
 .nav-link {
     color: white;
     font-weight: 500;
@@ -190,23 +172,13 @@
 @media screen and (max-width: 550px) {
     .text-icon {
         font-size: 40px;
-
     }
-
-}
-
-.my-button {
-    border: 0px;
-    border-radius: 3vw;
-    max-width: 70vw;
 }
 
 @media screen and (min-width: 550px) {
     .text-icon {
         font-size: 50px;
-
     }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -215,7 +187,11 @@
     }
 }
 
-
+.my-button {
+    border: 0px;
+    border-radius: 3vw;
+    max-width: 70vw;
+}
 
 .contact-link:hover {
     color: rgb(118, 118, 118);
