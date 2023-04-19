@@ -57,6 +57,10 @@
 
 }
 
+.accordion-button {
+    font-size: x-large;
+}
+
 .my-video {
     width: 50vw;
     height: 25vw;
