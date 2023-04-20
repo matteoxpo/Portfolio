@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="bg-grey ">
+<body class="bg-grey">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div>
@@ -405,8 +405,6 @@
         </div>
     </div>
 
-
-
     <div class="block-projects-oop container-fluid ">
         <br />
         <br />
@@ -481,11 +479,7 @@
                                 И хочу начать с принципов<br>
                             </div>
                         </div>
-                        <h1 class="word">
-                            Single
-                            Responsibility
-                            Principle
-                        </h1>
+                      
                     </div>
 
                     <div class="row justify-content-center">
@@ -493,15 +487,33 @@
                             <iframe class="my-video" src="https://www.youtube-nocookie.com/embed/_PBz1E-bWFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>  
+                    <div>
+                        <div class="row justify-content-center">
+                            <h1 class="col-6 word">
+                                Single
+                                Responsibility
+                                Principle
+                            </h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <em class="col-6" style="font-size: x-large;">
+                                Модуль должен иметь одну и только одну причину для изменения.
+                                Модули должны быть высокой прочности(cohesion) и 
+                                слабо связными(low coupling) 
+                            </em>
+                            <div class="col-6">
+                                <p class="sub-title">
+                                    Этот принцип нельзя показать на каком-то конкретном примере в данном проекте, он отражается в зависимостях между классами и делигированием техе или иныч задач.
+                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/blob/master/Data/Repositories/BaseRepository.cs">На примере класса BaseRepository</a>
+                                    можно увидеть, что каждый класс, наследуемый от него, несет одну ответсвтенность - работа с базой данных на основании той сущности, для которой пишется класс.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div> 
-
-
-
-
-
 
     <a name="contacts"></a>
     <div class="container-fluid">
