@@ -482,14 +482,10 @@
                       
                     </div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-6 w-100 embed-responsive embed-responsive-16by9">
-                            <iframe class="my-video" src="https://www.youtube-nocookie.com/embed/_PBz1E-bWFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>  
+                     
                     <div>
                         <div class="row justify-content-center">
-                            <h1 class="col-6 word">
+                            <h1 class="col-6 principle">
                                 Single
                                 Responsibility
                                 Principle
@@ -499,7 +495,7 @@
                             <em class="col-6" style="font-size: x-large;">
                                 Модуль должен иметь одну и только одну причину для изменения.
                                 Модули должны быть высокой прочности(cohesion) и 
-                                слабо связными(low coupling) 
+                                слабо связными(low coupling).
                             </em>
                             <div class="col-6">
                                 <p class="sub-title">
@@ -510,6 +506,39 @@
                             </div>
                         </div>
                     </div>
+
+                    <div>
+                        <div class="row justify-content-center">
+                            <h1 class="col-6 principle" >
+                                Open Closed Principle
+                            </h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <em class="col-6" style="font-size: x-large;">
+                                Принцип декларирует, что программные сущности (классы, модули, функции и т. п.) должны быть
+                                открыты для расширения, но закрыты для изменения. Это означает, что эти сущности могут менять
+                                свое поведение без изменения их исходного кода.
+                            </em>
+                            <div class="col-6">
+                                <p class="sub-title">
+                                    Данный принцип можно увидеть 
+                                    на примере использования
+                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/blob/master/Domain/Repositories/IDoctorRepository.cs">
+                                    интерфейса для репозитория доктора</a>, 
+                                    который наследуется от интерфейса 
+                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/blob/master/Domain/Repositories/IBasePerository.cs">
+                                    базового репозитория.</a>
+                                    <br>
+                                    Также все UseCase'ы взаимодействуют с базой данных только через интерфейсы, что гарантирует неизменяемость кода в самих кейсах, то есть при замене БД нет необходимости переписывать кейсы. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 w-100 embed-responsive embed-responsive-16by9">
+                            <iframe class="my-video" src="https://www.youtube-nocookie.com/embed/_PBz1E-bWFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>

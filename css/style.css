@@ -37,6 +37,10 @@
     font-weight: 600;
 }
 
+.principle {
+    text-align: center;
+}
+
 @media (max-width: 1024px) {
     p {
         font-size: calc(20px + (18 - 14) * ((100vw - 480px) / (1024 - 480)));
