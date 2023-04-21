@@ -514,11 +514,11 @@
                             </h1>
                         </div>
                         <div class="row justify-content-center">
-                            <em class="col-6" style="font-size: x-large;">
-                                Модуль должен иметь одну и только одну причину для изменения.
-                                Модули должны быть высокой прочности(cohesion) и 
-                                слабо связными(low coupling).
-                            </em>
+                            <div class="col-6 lead">
+                                    Модуль должен иметь одну и только одну причину для изменения.
+                                    Модули должны быть высокой прочности(cohesion) и 
+                                    слабо связными(low coupling).
+                            </div>
                             <div class="col-6">
                                 <p class="sub-title">
                                     Этот принцип нельзя показать на каком-то конкретном примере в данном проекте, он отражается в зависимостях между классами и делигированием техе или иныч задач.
@@ -536,11 +536,11 @@
                             </h1>
                         </div>
                         <div class="row justify-content-center">
-                            <em class="col-6" style="font-size: x-large;">
+                            <div class="col-6 lead">
                                 Принцип декларирует, что программные сущности (классы, модули, функции и т. п.) должны быть
                                 открыты для расширения, но закрыты для изменения. Это означает, что эти сущности могут менять
                                 свое поведение без изменения их исходного кода.
-                            </em>
+                            </div>
                             <div class="col-6">
                                 <p class="sub-title">
                                     Данный принцип можно увидеть 
@@ -564,12 +564,12 @@
                             </h1>
                         </div>
                         <div class="row justify-content-center">
-                            <em class="col-6" style="font-size: x-large;">
+                            <div class="col-6 lead">
                                 "Вы должны иметь возможность использовать любой производный
                                 класс вместо родительского класса и вести себя с ним таким же образом без внесения изменений".
                                 Класс Child не должен нарушать определение
                                 типа Root класса и его поведение.
-                            </em>
+                            </div>
                             <div class="col-6">
                                 <p class="sub-title">
                                     Единственное наследование класса от класса(<s>не от интерфейса</s>), которое есть в данном проекте 
@@ -591,25 +591,47 @@
                             </h1>
                         </div>
                         <div class="row justify-content-center">
-                            <em class="col-6" style="font-size: x-large;">
+                            <div class="col-6 lead">
                                 Зависимости, несущие лишний груз ненужных и неиспользуемых
                                 особенностей, могут стать причиной неожиданных проблем. Если кратко, то опасно создавать
                                 зависимости от модулей, содержащих больше, чем требуется.
-                            </em>
+                            </div>
                             <div class="col-6">
                                 <p class="sub-title">
-                                    Единственное наследование класса от класса(<s>не от интерфейса</s>), которое есть в данном проекте 
-                                    это наследование от 
-                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/blob/master/Data/Repositories/BaseRepository.cs">
-                                    базового репозитория</a>
-                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/tree/master/Data/Repositories">
-                                        к остальным реализациям интерфейсов из Domain слоя.
-                                    </a>
+                                    К сожалению такого примера в данном проекте нет.
                                 </p>
                             </div>
                         </div>
                     </div>
                     
+                    <div>
+                        <div class="row justify-content-center">
+                            <h1 class="col-6 principle">
+                                Dependency Inversion Principle
+                            </h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-6 lead">
+                                Модули верхних уровней не должны зависеть от модулей нижних уровней. Оба типа модулей
+                                должны зависеть от абстракций.
+                                Абстракции не должны зависеть от деталей. Детали должны зависеть от абстракций
+                            </div>
+                            <div class="col-6">
+                                <p class="sub-title">
+                                    В Domain слое присутствуют 
+                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/tree/master/Domain/Repositories">
+                                    интерфейсы
+                                    </a>
+                                    , которые диктуют 
+                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/tree/master/Data/Repositories">
+                                    базе данных
+                                    </a>
+                                    , что она должна уметь делать с сущностями. 
+                                    Таким образом стрелка зависимости сущностей от базы данных, развернулась в обратную сторону.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
