@@ -561,6 +561,32 @@
                             </div>
                         </div>
                     </div>
+
+                    <div>
+                        <div class="row justify-content-center">
+                            <h1 class="col-6 principle">
+                                The Interface Segregation Principle
+                            </h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <em class="col-6" style="font-size: x-large;">
+                                Зависимости, несущие лишний груз ненужных и неиспользуемых
+                                особенностей, могут стать причиной неожиданных проблем. Если кратко, то опасно создавать
+                                зависимости от модулей, содержащих больше, чем требуется.
+                            </em>
+                            <div class="col-6">
+                                <p class="sub-title">
+                                    Единственное наследование класса от класса(<s>не от интерфейса</s>), которое есть в данном проекте 
+                                    это наследование от 
+                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/blob/master/Data/Repositories/BaseRepository.cs">
+                                    базового репозитория</a>
+                                    <a href="https://github.com/matteoxpo/AutomatedWorkPlace/tree/master/Data/Repositories">
+                                        к остальным реализациям интерфейсов из Domain слоя.
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     
 
 
